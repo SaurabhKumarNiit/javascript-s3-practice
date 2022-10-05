@@ -1,10 +1,54 @@
 "HTTP Request		",To update movie for id 514,To update movie for id 500
-"URL		",,
-"METHOD	",,
-"Request Body 		",,
-"Content Type	",,
+"URL		"http://localhost:3000/movies/504 , http://localhost:3000/movies/500,
+"METHOD	"PUT,PUT,
+"Request Body 		"PUT,PUT,
+"Content Type	"{
+    "id": number,
+    "movieTitle": "String",
+    "yearOfRelease":number ,
+    "director": "String",
+    "cast": [
+        {
+            "actorName": "String",
+            "onScreenName": "String"
+        },
+        {
+            "actorName": "String",
+            "onScreenName": "Ingrid Herrera"
+        },
+        {
+            "actorName": "Adria Arjona",
+            "onScreenName": "Sofia Herrera"
+        }
+    ],
+    "rating": 5.9,
+    "genre": "Comedy",
+    "isOnOTT": "Yes"
+},,
 Body ,,
 "HTTP Response		",,
-"Status Code		",,
-"Status Message	",,
-Body,,
+"Status Code		"200,404,
+"Status Message	"OK , NOT FOUND,
+Body  {
+    "id": 504,
+    "movieTitle": "Father of the Bride",
+    "yearOfRelease": 2022,
+    "director": "Gary Alazraki",
+    "cast": [
+        {
+            "actorName": "Andy Gracia",
+            "onScreenName": "Billy Herrera"
+        },
+        {
+            "actorName": "Gloria Estefan",
+            "onScreenName": "Ingrid Herrera"
+        },
+        {
+            "actorName": "Adria Arjona",
+            "onScreenName": "Sofia Herrera"
+        }
+    ],
+    "rating": 5.9,
+    "genre": "Comedy",
+    "isOnOTT": "Yes"
+}, {},

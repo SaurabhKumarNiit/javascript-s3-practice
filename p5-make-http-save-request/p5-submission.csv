@@ -1,10 +1,77 @@
 "HTTP Request		",For Adding new movie with id 514,For Adding new movie with id 503
-"URL		",,
-"METHOD	",,
+"URL		" http://localhost:3000/movies/514 , http://localhost:3000/movies/503,
+"METHOD	"PUT,PUT,
 "Request Body 		",,
 "Content Type	",,
-Body ,,
+Body  {
+    "id": 514,
+    "movieTitle": "Father of the Bride",
+    "yearOfRelease": 2021,
+    "director": "Gary Alazraki",
+    "cast": [
+        {
+            "actorName": "Andy Garcia",
+            "onScreenName": "Billy Herrera"
+        },
+        {
+            "actorName": "Gloria Estefan",
+            "onScreenName": "Ingrid Herrera"
+        },
+        {
+            "actorName": "Adria Arjona",
+            "onScreenName": "Sofia Herrera"
+        }
+    ],
+    "rating": 5.9,
+    "genre": "Adventure",
+    "isOnOTT": false
+} , {
+    "id": 503,
+    "movieTitle": "Spiderhead",
+    "yearOfRelease": 2022,
+    "director": "Joseph Kosinski",
+    "cast": [
+        {
+            "actorName": "Chris Hemsworth",
+            "onScreenName": "Abnesti"
+        },
+        {
+            "actorName": "Miles Teller",
+            "onScreenName": "Jeff"
+        },
+        {
+            "actorName": "Jurnee Smollett",
+            "onScreenName": "Lizzy"
+        }
+    ],
+    "rating": 5.4,
+    "genre": "Action",
+    "isOnOTT": false
+},
 "HTTP Response		",,
-"Status Code		",,
-"Status Message	",,
-Body,,
+"Status Code		"404,201,
+"Status Message	"404 not found,OK,
+Body {},
+{
+    "id": 503,
+    "movieTitle": "Spiderhead",
+    "yearOfRelease": 2022,
+    "director": "Joseph Kosinski",
+    "cast": [
+        {
+            "actorName": "Chris Hemsworth",
+            "onScreenName": "Abnesti"
+        },
+        {
+            "actorName": "Miles Teller",
+            "onScreenName": "Jeff"
+        },
+        {
+            "actorName": "Jurnee Smollett",
+            "onScreenName": "Lizzy"
+        }
+    ],
+    "rating": 5.4,
+    "genre": "Action",
+    "isOnOTT": false
+},
