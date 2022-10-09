@@ -1,5 +1,5 @@
 HTTP Request,For All Movies,For Movie By Id,For Movie By Title,For Movie By Genre,For Movie By Genre and Year of Release,For Movie with Invalid Id
-URL http://localhost:3000/movies , http://localhost:3000/movies/502 ,http://localhost:3000/movies?movieTitle=Spider-Man: No Way Home ,  
+URL http://localhost:3000/movies , http://localhost:3000/movies/502 , http://localhost:3000/movies?movieTitle=Spider-Man: No Way Home ,  
     http://localhost:3000/movies?genre=Comedy,  http://localhost:3000/movies?genre=Action&yearOfRelease=2022,  http://localhost:3000/550,
 METHOD GEt,GET,GET,GET,GET,GET,
 ,,,,,,
